@@ -1,7 +1,10 @@
 import { combineReducers } from 'redux';
+import ReducerCountries from './reducerCountries'
+import reducerRateExchange from './reducerRateExchange';
 
 const rootReducer = combineReducers({
-  state: (state = {}) => state
+  countryReducer: ReducerCountries,
+  rateExchangeReducer: reducerRateExchange
 });
 
 export default rootReducer;
